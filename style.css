@@ -1,0 +1,696 @@
+body{
+
+    margin:0;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    background:linear-gradient(
+        135deg,
+        #ffd6e7,
+        #fff0f5
+    );
+
+
+    font-family: 'Georgia', serif;
+
+}
+
+
+/* TARJETA DEL INICIO */
+
+.tarjeta{
+
+    background:white;
+
+    width:350px;
+
+    padding:40px;
+
+    text-align:center;
+
+
+    border-radius:35px;
+
+
+    box-shadow:
+    0px 10px 30px rgba(255,120,170,0.3);
+
+}
+
+
+
+/* CORAZÓN DEL INICIO */
+
+.corazon{
+
+    font-size:50px;
+
+
+    animation:flotar 2s infinite alternate;
+
+}
+
+
+
+h1{
+
+    color:#e75480;
+
+    font-size:35px;
+
+}
+
+
+
+p{
+
+    color:#777;
+
+    font-size:18px;
+
+}
+
+
+
+/* BOTONES */
+
+button{
+
+    margin-top:25px;
+
+    padding:15px 35px;
+
+
+    border:none;
+
+    border-radius:30px;
+
+
+    background:#ff8fb1;
+
+    color:white;
+
+
+    font-size:18px;
+
+
+    cursor:pointer;
+
+
+    transition:0.3s;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.1);
+
+    background:#ff6f9c;
+
+}
+
+
+
+
+
+/* ANIMACIÓN CORAZÓN */
+
+@keyframes flotar{
+
+
+    from{
+
+        transform:translateY(0px);
+
+    }
+
+
+    to{
+
+        transform:translateY(-15px);
+
+    }
+
+}
+
+
+
+
+
+/* ===================== */
+/* PÁGINAS DE PREGUNTAS */
+/* ===================== */
+
+
+.pregunta{
+
+    background:white;
+
+    width:350px;
+
+    padding:40px;
+
+    text-align:center;
+
+
+    border-radius:35px;
+
+
+    box-shadow:
+    0px 10px 30px rgba(255,120,170,0.3);
+
+}
+
+
+
+.numero-pregunta{
+
+    color:#ff8fb1;
+
+    font-size:20px;
+
+}
+
+
+
+.pregunta-texto{
+
+    color:#e75480;
+
+    font-size:25px;
+
+}
+
+
+
+textarea{
+
+    width:90%;
+
+    height:100px;
+
+    border-radius:20px;
+
+    border:2px solid #ffc1d9;
+
+    padding:15px;
+
+    resize:none;
+
+    font-size:15px;
+
+    outline:none;
+
+    font-family:Georgia;
+
+}
+
+
+
+textarea:focus{
+
+    box-shadow:0px 0px 10px pink;
+
+}
+
+
+
+.boton-siguiente{
+
+    margin-top:25px;
+
+}
+/* ESTILOS DE LAS PREGUNTAS */
+
+.numero-pregunta{
+
+    color:#ff8fb1;
+
+    font-size:22px;
+
+}
+
+
+.pregunta-texto{
+
+    color:#d96b8b;
+
+    font-size:20px;
+
+    font-family:'Georgia', serif;
+
+    line-height:1.5;
+
+    font-style:italic;
+
+}
+
+
+textarea{
+
+    width:90%;
+
+    height:100px;
+
+    border-radius:20px;
+
+    border:2px solid #ffc1d9;
+
+    padding:15px;
+
+    resize:none;
+
+    font-size:15px;
+
+    outline:none;
+
+    font-family:Georgia;
+
+}
+
+
+textarea:focus{
+
+    box-shadow:0px 0px 10px pink;
+
+}
+/* CARTA DE PREGUNTAS */
+
+.carta{
+
+    background:#fffafc;
+
+    width:360px;
+
+    padding:45px 40px;
+
+    text-align:center;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+    0px 15px 35px rgba(220,120,160,0.25);
+
+
+    position:relative;
+
+
+}
+
+
+/* Número de pregunta */
+
+.numero-pregunta{
+
+    color:#e78aa8;
+
+    font-family:'Playfair Display', serif;
+
+    font-size:24px;
+
+}
+
+
+/* Pregunta */
+
+.pregunta-texto{
+
+    color:#c76b8a;
+
+    font-family:'Playfair Display', serif;
+
+    font-style:italic;
+
+    font-size:21px;
+
+    line-height:1.5;
+
+}
+
+
+
+/* Caja donde escribe */
+
+.carta textarea{
+
+    background:#fff;
+
+    border:2px solid #ffd0df;
+
+}
+
+
+
+/* Botón */
+
+.carta button{
+
+    background:#f48fb1;
+
+}
+/* ===================== */
+/* DETALLES DE CARTA 💌 */
+/* ===================== */
+
+
+/* La carta de preguntas */
+
+.carta{
+
+    background:#fffafc;
+
+    width:360px;
+
+    padding:45px 40px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+
+    box-shadow:
+    0px 15px 35px rgba(220,120,160,0.25);
+
+
+    position:relative;
+
+    overflow:hidden;
+
+    animation:aparecer 0.8s ease;
+
+}
+
+
+/* Sello de arriba */
+
+.sello{
+
+    font-size:50px;
+
+    margin-bottom:10px;
+
+    animation:flotar 2s infinite alternate;
+
+}
+
+
+
+/* Hoja doblada esquina superior derecha */
+
+.carta::after{
+
+    content:"";
+
+    position:absolute;
+
+
+    top:0;
+
+    right:0;
+
+
+    width:60px;
+
+    height:60px;
+
+
+    background:#ffd6e7;
+
+
+    clip-path:polygon(
+        100% 0,
+        0 0,
+        100% 100%
+    );
+
+}
+
+
+
+
+
+/* Número de pregunta */
+
+.numero-pregunta{
+
+    color:#e78aa8;
+
+    font-family:'Georgia',serif;
+
+    font-size:24px;
+
+}
+
+
+
+/* Texto de la pregunta */
+
+.pregunta-texto{
+
+    color:#c76b8a;
+
+    font-family:'Georgia',serif;
+
+    font-style:italic;
+
+    font-size:20px;
+
+    line-height:1.6;
+
+}
+
+
+
+/* Caja para escribir */
+
+.carta textarea{
+
+    background:white;
+
+
+    width:90%;
+
+    height:100px;
+
+
+    border-radius:20px;
+
+
+    border:2px solid #ffd0df;
+
+
+    padding:15px;
+
+
+    resize:none;
+
+
+    font-size:15px;
+
+
+    font-family:Georgia;
+
+
+    outline:none;
+
+}
+
+
+
+.carta textarea:focus{
+
+    box-shadow:0px 0px 10px pink;
+
+}
+
+
+
+/* Botón dentro de la carta */
+
+.carta button{
+
+    background:#f48fb1;
+
+}
+
+
+
+/* Animación al aparecer */
+
+@keyframes aparecer{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ANIMACIÓN DE ENTRADA DE LA CARTA */
+
+.carta{
+    animation: entrarCarta 0.7s ease;
+}
+
+
+@keyframes entrarCarta{
+
+    from{
+        opacity:0;
+        transform:translateX(80px) rotate(3deg);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0) rotate(0deg);
+    }
+
+}
+
+
+/* ANIMACIÓN DE SALIDA */
+
+.carta.salir{
+
+    animation: salirCarta 0.6s ease forwards;
+
+}
+
+
+@keyframes salirCarta{
+
+    from{
+        opacity:1;
+        transform:translateX(0) rotate(0deg);
+    }
+
+    to{
+        opacity:0;
+        transform:translateX(-150px) rotate(-8deg);
+    }
+
+}
+
+/* CARTA FINAL */
+
+.carta-final {
+    background: #fffafc;
+    width: 360px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px #e9a8bd;
+    position: relative;
+}
+
+.corazon-final {
+    font-size: 45px;
+    animation: flotar 2s infinite ease-in-out;
+}
+
+.carta-final h1 {
+    color: #e75480;
+    font-size: 30px;
+}
+
+.carta-final p {
+    color: #777;
+    line-height: 1.6;
+}
+
+/* SOBRE */
+
+.sobre {
+    width: 260px;
+    height: 180px;
+    background: #ffc1d6;
+    margin: 40px auto 20px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.tapa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 130px solid transparent;
+    border-right: 130px solid transparent;
+    border-top: 100px solid #f48fb1;
+    transform-origin: top;
+    transition: transform 0.8s;
+    z-index: 3;
+}
+
+.corazon-sobre {
+    position: absolute;
+    top: 75px;
+    left: 110px;
+    font-size: 35px;
+    z-index: 4;
+}
+
+/* MENSAJE */
+
+.mensaje {
+    background: #fffafc;
+    position: absolute;
+    width: 230px;
+    min-height: 260px;
+    left: 15px;
+    bottom: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.mensaje h2 {
+    color: #e75480;
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+.mensaje p {
+    font-family: Georgia;
+    font-size: 14px;
+    color: #777;
+    text-align: left;
+}
+
+.sobre.abierto .tapa {
+    transform: rotateX(180deg);
+    z-index: 0;
+}
+
+.sobre.abierto .mensaje {
+    opacity: 1;
+    transform: translateY(-130px);
+}
